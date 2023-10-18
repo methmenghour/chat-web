@@ -116,13 +116,13 @@ const Form = () => {
             size={25}
             className="text-panel-header-icon cursor-pointer text-sky-500"
           />
-        </button>
+        </button>  
+        </form>  
         <button>
             <FaMicrophone   size={25} 
             onClick={() => setShowAudioRecorder(true)} 
             className="text-panel-header-icon cursor-pointer text-sky-500 " hidden={showAudioRecorder} />
         </button> 
-        </form>  
         {showAudioRecorder &&
          (<MessageVoice ChangeAudioRecorder={function (prevState: boolean): void {
           setShowAudioRecorder(prevState)
